@@ -4,7 +4,7 @@
 quasar build
 
 # Define the remote repository URL
-REPO_URL="https://github.com/derickongeri/Russaapp.git"
+REPO_URL="https://github.com/derickongeri/hello-rusa.git"
 
 # Get commit message from command line argument
 COMMIT_MESSAGE="$1"
@@ -28,4 +28,4 @@ echo "Pushhing to github..."
 git push $REPO_URL main
 
 # deploying to dev server
-scp -r /home/derick/Desktop/Menopause/RUSA/dist/spa/* root@139.84.226.65:/var/www/html/hello-rusa
+# scp -r /home/derick/Desktop/Menopause/RUSA/dist/spa/* root@139.84.226.65:/var/www/html/hello-rusa
