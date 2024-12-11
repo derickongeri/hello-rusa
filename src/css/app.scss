@@ -1,1 +1,14 @@
 // app global css in SCSS form
+
+
+.tabs-mobile{
+   @media (min-width: $breakpoint-md-min) {
+    display: none;
+  }
+}
+
+.tabs-desktop{
+   @media (max-width: $breakpoint-md-min) {
+    display: none;
+  }
+}
