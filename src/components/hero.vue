@@ -4,10 +4,10 @@
       <div class="col-12 col-md-6 flex flex-center" style="max-height: 80vh;">
         <div class="q-pr-md" style="width: 100%;">
           <div class="text-h3 header-text q-my-md" style="font-weight: 700;">
-            Manage Menopause with Confidence
+            Empowering African Women Through Menopaus
           </div>
           <div class="text-h6 q-mb-md">
-            Some tagline to tell more about the app
+            Thriving through change, Together
           </div>
           <div class="q-mt-xl">
             <q-btn

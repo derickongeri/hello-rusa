@@ -14,7 +14,7 @@
       <div class="items-center q-mt-xl" style="min-height: 35vh">
         <Aboutsection />
       </div>
-      <div class="text-center hero-section" style="width: 100%">
+      <div class="text-center" style="width: 100%">
         <div class="q-pa-md q-my-lg" style="max-width: 1140px; margin: auto">
           <div class="q-video">
             <iframe

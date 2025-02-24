@@ -3,8 +3,8 @@
   <div class="about-section q-py-md">
     <div class="q-mb-md">
       <!-- Centered Title -->
-      <div class="text-h3 header-text text-center q-mb-lg" style="font-weight: 700">
-        About Orusa App
+      <div class="text-h3 header-text text-center q-mb-lg" style="">
+        About Orusa
       </div>
     </div>
 
