@@ -96,7 +96,11 @@
                   >
                 </div>
               </div>
-              <q-separator color="grey-7" />
+            </div>
+
+            <div class="row text-grey-6" style="width: 100%">
+              <q-separator class="q-my-md" color="grey-7" style="width: 100%" />
+              © 2025 Orusa. All rights reserved
             </div>
           </div>
           <div class="col-12 text-grey-1 col-md-6 flex flex-center">
@@ -135,8 +139,8 @@
               </div>
             </div>
 
-            <div class="tabs-desktop row justify-end" style="width: 100%;">
-              <q-separator class="" style="width: 95%;" color="grey-7"/>
+            <div class="tabs-desktop row justify-end" style="width: 100%">
+              <q-separator class="" style="width: 95%" color="grey-7" />
               <q-tabs no-caps align="right">
                 <q-route-tab to="/" label="Home" />
                 <!-- <q-route-tab to="/page3" label="Download" /> -->

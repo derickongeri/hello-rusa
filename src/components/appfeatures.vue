@@ -3,7 +3,7 @@
     <!-- Centered Title -->
     <div
       class="text-h3 header-text text-center q-mb-lg"
-      style="font-weight: 700"
+      style="font-weight: 400"
     >
       App features
     </div>
@@ -12,10 +12,10 @@
     <div class="col-12 col-md-6 flex flex-center ">
       <!-- Add an image or graphic for visual appeal -->
       <q-img
-        src="~/src/assets/shot.png"
+        src="~/src/assets/shot2.png"
         alt="Menopause app graphic"
         class="q-mb-md"
-        style="min-width: 120%"
+        style="min-width: 100%"
       />
     </div>
     <div class="col-12 col-md-6 flex flex-center ">

@@ -11,7 +11,8 @@
           </div>
           <div class="q-mt-xl">
             <q-btn
-              push
+              unelevated
+              style="border-radius: 10px;"
               no-caps
               color="black"
               size="lg"
