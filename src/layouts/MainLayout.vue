@@ -99,25 +99,50 @@
               <q-separator color="grey-7" />
             </div>
           </div>
-          <div class="col-12 text-grey-1 col-md-6 flex">
-            <div>
+          <div class="col-12 text-grey-1 col-md-6 flex flex-center">
+            <div style="width: 100%" class="q-pa-md">
               <!-- Add an image or graphic for visual appeal -->
-              <div class="text-h5 q-my-md" style="font-weight: 700">
+              <div class="text-h5 q-px-md" style="font-weight: 700">
                 Join our Community
               </div>
 
-              <div>
-                <q-input outlined v-model="text" label="Label" dense style="">
+              <div class="q-px-md q-pb-md" style="min-width: 100%">
+                <q-input
+                  class="q-pa-sm"
+                  borderless
+                  dark
+                  placeholder="Your email"
+                  v-model="text"
+                  dense
+                  style="border: 1px solid white; border-radius: 10px"
+                >
                   <template v-slot:after>
                     <q-btn
                       unelevated
                       color="grey-1"
                       text-color="grey-9"
                       label="Submit"
+                      class="q-px-xl"
+                      style="border-radius: 10px"
                     />
                   </template>
                 </q-input>
               </div>
+
+              <div class="row q-pa-md text-grey-6">
+                By subscribing, you agree to receive emails from Caria and
+                accept our web Terms & Conditions and Privacy Policy.
+              </div>
+            </div>
+
+            <div class="tabs-desktop row justify-end" style="width: 100%;">
+              <q-separator class="" style="width: 95%;" color="grey-7"/>
+              <q-tabs no-caps align="right">
+                <q-route-tab to="/" label="Home" />
+                <!-- <q-route-tab to="/page3" label="Download" /> -->
+                <q-route-tab to="/press" label="Press" />
+                <q-route-tab to="/contact" label="Contact" />
+              </q-tabs>
             </div>
           </div>
         </div>
@@ -127,7 +152,7 @@
       </q-toolbar> -->
     </q-footer>
 
-    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
+    <q-drawer v-model="rightDrawerOpen" side="right" bordered>
       <div class="row q-my-lg justify-end" style="margin-bottom: 10vh">
         <q-btn
           flat

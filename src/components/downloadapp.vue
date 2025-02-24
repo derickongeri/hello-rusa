@@ -7,9 +7,9 @@
     <div class="col-12 col-md-6 flex flex-center">
       <div class="q-pr-md q-ma-xl" style="width: 100%">
         <div class="text-h3 q-my-md" style="font-weight: 700">
-          You're not alone in your journey.
+          Download OrusaApp
         </div>
-        <div class="text-h6 q-mb-md">Get the app for free</div>
+        <div class="text-h6 q-mb-md">Available for both Android and iOS Devices</div>
         <div class="q-mt-xl">
           <div class="row q-gutter-x-md items-center">
             <a href="">
