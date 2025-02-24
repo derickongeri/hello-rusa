@@ -80,7 +80,7 @@
                 </div>
               </router-link>
               <q-separator color="grey-7" />
-              <div class="text-h6 q-mb-md">
+              <div class="text-h6 text-grey-4 q-mb-md">
                 <div class="" style="max-width: 350px">
                   <q-list>
                     <q-item clickable to="/press">
@@ -106,7 +106,7 @@
           <div class="col-12 text-grey-1 col-md-6 flex flex-center">
             <div style="width: 100%" class="">
               <!-- Add an image or graphic for visual appeal -->
-              <div class="text-h5 q-px-md" style="font-weight: 700">
+              <div class="text-h5 text-grey-4 q-px-md" style="font-weight: 700">
                 Join our Community
               </div>
 
