@@ -1,7 +1,10 @@
 <template>
   <q-page class="flex">
-    <div class="home-page" style="width: 100vw;">
-      <div class="hero-section  q-ma-none q-pa-none" style="position: relative; max-width: 100vw;">
+    <div class="home-page" style="width: 100vw">
+      <div
+        class="hero-section q-ma-none q-pa-none"
+        style="position: relative; max-width: 100vw"
+      >
         <heroSection />
       </div>
       <!-- <div class="row items-center" style="min-height: 35vh">
@@ -11,7 +14,7 @@
       <div class="items-center q-mt-xl" style="min-height: 35vh">
         <Aboutsection />
       </div>
-      <div class="text-center" style="width: 100%">
+      <div class="text-center hero-section" style="width: 100%">
         <div class="q-pa-md q-my-lg" style="max-width: 1140px; margin: auto">
           <div class="q-video">
             <iframe
@@ -26,7 +29,10 @@
           </div>
         </div>
       </div>
-      <div class="q-mt-lg" style="max-width: 100vw">
+      <div class="items-center q-mt-xl" style="min-height: 35vh">
+        <appfeatures />
+      </div>
+      <div class="q-mt-lg hero-section" style="max-width: 100vw">
         <Downloadapp />
       </div>
 
@@ -43,6 +49,7 @@ import Downloadapp from "src/components/downloadapp.vue";
 import aboutsection from "src/components/aboutsection.vue";
 import Aboutsection from "src/components/aboutsection.vue";
 import Footer from "src/components/footer.vue";
+import appfeatures from "src/components/appfeatures.vue";
 </script>
 
 <style scoped>

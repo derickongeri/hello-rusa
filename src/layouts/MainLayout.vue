@@ -20,8 +20,8 @@
         </router-link>
 
         <div
-          class="text-primary tabs-mobile q-ml-md text-h5"
-          style="font-weight: 700"
+          class="text-primary tabs-mobile q-ma-md text-h5"
+          style="font-weight: 700; min-width: 150px"
         >
           <q-img
             src="~/src/assets/logo.svg"
@@ -34,14 +34,31 @@
         <div class="tabs-desktop">
           <q-tabs no-caps align="left">
             <q-route-tab to="/" label="Home" />
-            <q-route-tab to="/page3" label="Download" />
+            <!-- <q-route-tab to="/page3" label="Download" /> -->
             <q-route-tab to="/press" label="Press" />
             <q-route-tab to="/contact" label="Contact" />
           </q-tabs>
         </div>
         <div class="tabs-mobile q-mr-sm">
-          <q-btn flat round color="primary" icon="mdi-menu" />
+          <q-btn
+            flat
+            round
+            color="grey-9"
+            icon="menu"
+            @click="toggleRightDrawer"
+          >
+          </q-btn>
         </div>
+        <!-- <div class="">
+          <q-btn
+          style="border-radius: 10px;"
+            unelevated
+            no-caps
+            color="black"
+            label="Get Started"
+            @click="navigateToSignup"
+          />
+        </div> -->
       </div>
     </q-header>
     <q-footer>
@@ -62,35 +79,27 @@
                   />
                 </div>
               </router-link>
-
+              <q-separator color="grey-7" />
               <div class="text-h6 q-mb-md">
                 <div class="" style="max-width: 350px">
-                  <q-list bordered separator>
-                    <q-item clickable v-ripple>
+                  <q-list>
+                    <q-item clickable to="/press">
                       <q-item-section>Press</q-item-section>
                     </q-item>
-                    <q-item clickable v-ripple>
+
+                    <q-item clickable to="/contact">
                       <q-item-section>Contact</q-item-section>
                     </q-item>
-                    <q-item clickable v-ripple>
+                    <q-item clickable v-close-popup>
                       <q-item-section>Download</q-item-section>
-                    </q-item>
-                  </q-list>
+                    </q-item></q-list
+                  >
                 </div>
               </div>
-              <div class="q-mt-xl">
-                <q-btn
-                  push
-                  no-caps
-                  color="black"
-                  size="lg"
-                  label="Get Started"
-                  @click="navigateToSignup"
-                />
-              </div>
+              <q-separator color="grey-7" />
             </div>
           </div>
-          <div class="col-12 text-grey-1 col-md-6 flex flex-center">
+          <div class="col-12 text-grey-1 col-md-6 flex">
             <div>
               <!-- Add an image or graphic for visual appeal -->
               <div class="text-h5 q-my-md" style="font-weight: 700">
@@ -98,24 +107,13 @@
               </div>
 
               <div>
-                <q-input
-                  dark
-                  outlined
-                  standout
-                  v-model="text"
-                  style="border-radius: 20px; width: 100%"
-                  class=""
-                >
-                  <template v-slot:append>
+                <q-input outlined v-model="text" label="Label" dense style="">
+                  <template v-slot:after>
                     <q-btn
-                      style="width: 150px"
-                      class="q-ml-md"
-                      push
-                      label="Subscribe"
-                      no-caps
-                      size="lg"
+                      unelevated
                       color="grey-1"
                       text-color="grey-9"
+                      label="Submit"
                     />
                   </template>
                 </q-input>
@@ -129,12 +127,52 @@
       </q-toolbar> -->
     </q-footer>
 
+    <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
+      <div class="row q-my-lg justify-end" style="margin-bottom: 10vh">
+        <q-btn
+          flat
+          round
+          color="grey-9"
+          icon="close"
+          @click="toggleRightDrawer"
+        >
+        </q-btn>
+      </div>
+      <q-list
+        style="
+          min-width: 100vw;
+          min-height: 100vh;
+          font-weight: 400;
+          font-size: 32px;
+        "
+      >
+        <q-item clickable to="/">
+          <q-item-section>Home</q-item-section>
+        </q-item>
+        <q-item clickable to="/press">
+          <q-item-section>Press</q-item-section>
+        </q-item>
+
+        <q-item clickable to="/contact">
+          <q-item-section>Contact</q-item-section>
+        </q-item>
+        <q-item clickable v-close-popup>
+          <q-item-section>Download</q-item-section>
+        </q-item>
+      </q-list>
+    </q-drawer>
+
     <q-page-container>
       <router-view />
     </q-page-container>
 
     <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-btn fab icon="keyboard_arrow_up" color="grey-10" />
+      <q-btn
+        fab
+        icon="keyboard_arrow_up"
+        color="grey-10"
+        @click="scrollToTop"
+      />
     </q-page-sticky>
   </q-layout>
 </template>
@@ -198,10 +236,14 @@ const linksList = [
   },
 ];
 
-const leftDrawerOpen = ref(false);
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value;
+const rightDrawerOpen = ref(false);
+
+function toggleRightDrawer() {
+  rightDrawerOpen.value = !rightDrawerOpen.value;
 }
 </script>
 

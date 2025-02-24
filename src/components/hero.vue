@@ -1,9 +1,9 @@
 <template>
     <!-- Header Section -->
-    <div class="q-mx-auto row q-pa-md" style="min-height: 70vh;max-width: 1140px;">
+    <div class="q-mx-auto row hero q-pa-md" style="">
       <div class="col-12 col-md-6 flex flex-center" style="max-height: 80vh;">
         <div class="q-pr-md" style="width: 100%;">
-          <div class="text-h3 q-my-md" style="font-weight: 700;">
+          <div class="text-h3 header-text q-my-md" style="font-weight: 700;">
             Manage Menopause with Confidence
           </div>
           <div class="text-h6 q-mb-md">
@@ -63,4 +63,6 @@ function navigateToSignup() {
 .q-page {
   height: 100vh; /* Ensures the page fills the screen */
 }
+
+
 </style>

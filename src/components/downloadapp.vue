@@ -1,7 +1,7 @@
 <template>
   <!-- Header Section -->
   <div
-    class="q-mx-auto bg-green-1 row q-pa-lg"
+    class="q-mx-auto row"
     style="min-height: 50vh; max-width: 1400px"
   >
     <div class="col-12 col-md-6 flex flex-center">
@@ -12,30 +12,13 @@
         <div class="text-h6 q-mb-md">Get the app for free</div>
         <div class="q-mt-xl">
           <div class="row q-gutter-x-md items-center">
-            <q-btn
-              push
-              no-caps
-              flat
-              color=""
-              size="lg"
-              label=""
-              @click="navigateToSignup"
-              style="width:250px"
-            >
-            <div class="ios-btn"></div>
-          </q-btn>
-            <q-btn
-              push
-              no-caps
-              flat
-              color=""
-              size="lg"
-              label=""
-              @click="navigateToSignup"
-              style="width:250px"
-            >
-            <div class="android-btn"></div>
-          </q-btn>
+            <a href="">
+              <div style="width: 250px" class="ios-btn"></div>
+            </a>
+
+            <a href="">
+              <div style="width: 250px" class="android-btn"></div>
+            </a>
           </div>
         </div>
       </div>
@@ -43,11 +26,11 @@
     <div class="col-12 col-md-6 flex flex-center tabs-desktop">
       <!-- Add an image or graphic for visual appeal -->
       <q-img
-          src="~/src/assets/img6.png"
-          alt="Menopause app graphic"
-          class="q-mb-md"
-          style="max-width:100%;"
-        />
+        src="~/src/assets/2.svg"
+        alt="Menopause app graphic"
+        class="q-mb-"
+        style="max-width: 100%"
+      />
     </div>
   </div>
 </template>
@@ -82,7 +65,7 @@ function navigateToSignup() {
 .android-btn {
   width: 100%;
   height: 100px; /* Adjust the height based on your needs */
-  background-image: url('~/src/assets/googleplay.svg');
+  background-image: url("~/src/assets/googleplay.svg");
   background-size: cover; /* Ensures the SVG covers the entire div */
   background-position: center; /* Centers the SVG */
   background-repeat: no-repeat; /* Prevents the SVG from repeating */
@@ -91,7 +74,7 @@ function navigateToSignup() {
 .ios-btn {
   width: 100%;
   height: 70px; /* Adjust the height based on your needs */
-  background-image: url('~/src/assets/appstore.svg');
+  background-image: url("~/src/assets/appstore.svg");
   background-size: cover; /* Ensures the SVG covers the entire div */
   background-position: center; /* Centers the SVG */
   background-repeat: no-repeat; /* Prevents the SVG from repeating */

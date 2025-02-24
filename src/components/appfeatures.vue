@@ -1,25 +1,26 @@
 <template>
-  <!-- About Section -->
-  <div class="about-section q-py-md">
-    <div class="q-mb-md">
-      <!-- Centered Title -->
-      <div class="text-h3 header-text text-center q-mb-lg" style="font-weight: 700">
-        About Orusa App
-      </div>
+  <div class="q-mb-md">
+    <!-- Centered Title -->
+    <div
+      class="text-h3 header-text text-center q-mb-lg"
+      style="font-weight: 700"
+    >
+      App features
     </div>
-
-    <!-- Body Text -->
-    <div class="text-body1 q-pa-md text-justify caption-text">
-      <p>
-        At Orusa App, we are proud to introduce the first African menopause app,
-        created to address the unique needs of women experiencing menopause
-        across the continent. Menopause is a natural stage in a woman’s life,
-        yet it is often misunderstood and under-discussed, especially within
-        African communities. Our mission is to break the silence, provide
-        accurate information, and create a supportive space for women to
-        navigate this life transition with confidence.
-      </p>
-
+  </div>
+  <div class="q-mx-auto row hero q-pa-md" style="">
+    <div class="col-12 col-md-6 flex flex-center ">
+      <!-- Add an image or graphic for visual appeal -->
+      <q-img
+        src="~/src/assets/shot.png"
+        alt="Menopause app graphic"
+        class="q-mb-md"
+        style="min-width: 120%"
+      />
+    </div>
+    <div class="col-12 col-md-6 flex flex-center ">
+      <!-- Add an image or graphic for visual appeal -->
+      <div class="text-body1 q-pa-md text-justify caption-text">
       <p>
         Orusa app offers tailored resources, expert advice, and a supportive
         community to help women understand and manage the physical, emotional,
@@ -38,16 +39,11 @@
         support you every step of the way.
       </p>
     </div>
+    </div>
   </div>
-
-  <!--
-
-  <div class="app-features">
-
+  <!-- <div class="app-features">
     <div class="features-section q-pa-md">
-
       <div class="q-gutter-x-xl row justify-center">
-
         <div class="col-12 col-md-4">
           <q-card flat class="feature-card" shadow="2">
             <q-img
@@ -73,7 +69,7 @@
         <div class="col-12 col-md-4">
           <q-card flat class="feature-card" shadow="2">
             <q-img
-              src="~/src/assets/mockup1.png"
+              src="~/src/assets/shot.png"
               alt="Menopause app graphic"
               class="q-mb-md"
               style="max-width: 80%"
@@ -136,51 +132,11 @@
         </div>
       </div>
     </div>
-  </div>
-
-  -->
+  </div> -->
 </template>
 
 <script setup>
 import { ref } from "vue";
 </script>
 
-<style scoped>
-.about-section {
-  max-width: 1140px; /* Limit the width for larger screens */
-  margin: 0 auto; /* Center the section */
-}
-
-.app-features {
-  width: 100vw;
-}
-
-.features-section {
-  margin: 0 auto; /* Center the section */
-}
-
-.feature-card {
-  margin: 10px;
-  /* Customize card styling if needed */
-  border-radius: 12px; /* Rounded corners */
-}
-
-.q-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.head-text {
-  font-weight: 700;
-}
-
-.caption-text {
-  font-size: large;
-}
-</style>
+<style scoped></style>
