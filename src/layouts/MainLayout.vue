@@ -62,7 +62,7 @@
       </div>
     </q-header>
     <q-footer>
-      <div class="bg-grey-10" style="max-width: 100vw; height: 50vh">
+      <div class="bg-grey-10" style="max-width: 100vw;">
         <div
           class="q-mx-auto row q-pa-md"
           style="min-height: 50vh; max-width: 1140px"
