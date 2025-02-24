@@ -62,7 +62,7 @@
       </div>
     </q-header>
     <q-footer>
-      <div class="bg-grey-10" style="max-width: 100vw;">
+      <div class="bg-grey-10" style="max-width: 100vw">
         <div
           class="q-mx-auto row q-pa-md"
           style="min-height: 50vh; max-width: 1140px"
@@ -98,13 +98,13 @@
               </div>
             </div>
 
-            <div class="row text-grey-6" style="width: 100%">
+            <div class="row tabs-desktop text-grey-6" style="width: 100%">
               <q-separator class="q-my-md" color="grey-7" style="width: 100%" />
               © 2025 Orusa. All rights reserved
             </div>
           </div>
           <div class="col-12 text-grey-1 col-md-6 flex flex-center">
-            <div style="width: 100%" class="q-pa-md">
+            <div style="width: 100%" class="">
               <!-- Add an image or graphic for visual appeal -->
               <div class="text-h5 q-px-md" style="font-weight: 700">
                 Join our Community
@@ -126,9 +126,10 @@
                       color="grey-1"
                       text-color="grey-9"
                       label="Submit"
-                      class="q-px-xl"
+                      class="q-px-xl tabs-desktop"
                       style="border-radius: 10px"
                     />
+                    <q-btn class="tabs-mobile" flat round color="grey-1" icon="mdi-arrow-right" />
                   </template>
                 </q-input>
               </div>
@@ -137,6 +138,11 @@
                 By subscribing, you agree to receive emails from Caria and
                 accept our web Terms & Conditions and Privacy Policy.
               </div>
+            </div>
+
+            <div class="row text-grey-6" style="width: 100%">
+              <q-separator class="q-my-md" color="grey-7" style="width: 100%" />
+              © 2025 Orusa. All rights reserved
             </div>
 
             <div class="tabs-desktop row justify-end" style="width: 100%">

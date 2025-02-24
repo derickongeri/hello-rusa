@@ -17,7 +17,7 @@
       style="width: 100vw;"
     >
       <div
-        class="header-text text-h6 text-center "
+        class="header-text header-caption text-h6 text-center "
         style="font-weight: 400"
       >
         We would love to hear from you
@@ -57,7 +57,9 @@
         :rules="[(val) => !!val || 'Message is required']"
       />
 
-      <div class="row"><q-space/><q-btn unelevated no-caps label="Submit" type="submit" color="grey-10" style="border-radius: 10px;"/></div>
+      <div class="row tabs-desktop"><q-space/><q-btn unelevated no-caps label="Submit" type="submit" color="grey-10" style="border-radius: 10px;"/></div>
+
+      <div class="row tabs-mobile"><q-btn unelevated no-caps label="Submit" type="submit" color="grey-10" style="border-radius: 10px;"/></div>
 
     </q-form>
   </q-page>

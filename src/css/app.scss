@@ -42,4 +42,8 @@
   }
 }
 
-
+.header-caption {
+  @media (max-width: $breakpoint-md-min) {
+    font-size: 20px;
+  }
+}
