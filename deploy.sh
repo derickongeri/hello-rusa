@@ -28,4 +28,4 @@ echo "Pushhing to github..."
 git push $REPO_URL main
 
 # deploying to dev server
-scp -r /Users/derickongeri/Desktop/hello-orusa/dist/spa/* root@139.84.226.65:/var/www/html/hello-rusa
+scp -r /Users/derickongeri/Desktop/orusa/dist/spa/* root@5.22.212.39:/var/www/orusa-app.com/html

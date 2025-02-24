@@ -1,7 +1,7 @@
 <template>
     <!-- Header Section -->
-    <div class="q-mx-auto row q-pa-md" style="min-height: 50vh;max-width: 1140px;">
-      <div class="col-12 col-md-6 flex flex-center">
+    <div class="q-mx-auto row q-pa-md" style="min-height: 70vh;max-width: 1140px;">
+      <div class="col-12 col-md-6 flex flex-center" style="max-height: 80vh;">
         <div class="q-pr-md" style="width: 100%;">
           <div class="text-h3 q-my-md" style="font-weight: 700;">
             Manage Menopause with Confidence
@@ -24,10 +24,10 @@
       <div class="col-12 col-md-6 flex flex-center tabs-desktop">
         <!-- Add an image or graphic for visual appeal -->
         <q-img
-          src="https://via.placeholder.com/400"
+          src="~/src/assets/1.jpg"
           alt="Menopause app graphic"
           class="q-mb-md"
-          style="max-width: 80%;"
+          style="min-width:120%;"
         />
       </div>
     </div>

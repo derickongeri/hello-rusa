@@ -1,6 +1,15 @@
 // app global css in SCSS form
 
 
+// *{
+//   outline: 1px solid limegreen !important;
+// }
+
+// * {
+//   box-sizing: border-box;
+//   background-color: rgb(0 100 0 / 0.1) !important;
+// }
+
 .tabs-mobile{
    @media (min-width: $breakpoint-md-min) {
     display: none;

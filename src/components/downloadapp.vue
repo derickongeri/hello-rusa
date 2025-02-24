@@ -43,11 +43,11 @@
     <div class="col-12 col-md-6 flex flex-center tabs-desktop">
       <!-- Add an image or graphic for visual appeal -->
       <q-img
-        src="https://via.placeholder.com/400"
-        alt="Menopause app graphic"
-        class="q-mb-md"
-        style="max-width: 80%"
-      />
+          src="~/src/assets/img6.png"
+          alt="Menopause app graphic"
+          class="q-mb-md"
+          style="max-width:100%;"
+        />
     </div>
   </div>
 </template>
