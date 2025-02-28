@@ -19,17 +19,20 @@
           </div>
         </router-link>
 
-        <div
-          class="text-primary tabs-mobile q-ma-md text-h5"
-          style="font-weight: 700; min-width: 150px"
-        >
-          <q-img
-            src="~/src/assets/logo.svg"
-            alt="Menopause app graphic"
-            class="q-mb-md"
-            style="max-width: 150px"
-          />
-        </div>
+        <router-link to="/">
+          <div
+            class="text-primary tabs-mobile q-ma-md text-h5"
+            style="font-weight: 700; min-width: 150px"
+          >
+            <q-img
+              src="~/src/assets/logo.svg"
+              alt="Menopause app graphic"
+              class="q-mb-md"
+              style="max-width: 150px"
+            />
+          </div>
+        </router-link>
+
         <q-space />
         <div class="tabs-desktop">
           <q-tabs no-caps align="left">
@@ -99,7 +102,7 @@
             </div>
 
             <div class="row tabs-desktop text-grey-6" style="width: 100%">
-              <q-separator class="q-my-md" color="grey-7" style="width: 100%" />
+              <q-separator class="q-my-md" color="grey-7" style="width: 95%" />
               © 2025 Orusa. All rights reserved
             </div>
           </div>
@@ -129,7 +132,13 @@
                       class="q-px-xl tabs-desktop"
                       style="border-radius: 10px"
                     />
-                    <q-btn class="tabs-mobile" flat round color="grey-1" icon="mdi-arrow-right" />
+                    <q-btn
+                      class="tabs-mobile"
+                      flat
+                      round
+                      color="grey-1"
+                      icon="mdi-arrow-right"
+                    />
                   </template>
                 </q-input>
               </div>
@@ -140,7 +149,7 @@
               </div>
             </div>
 
-            <div class="row text-grey-6" style="width: 100%">
+            <div class="row tabs-mobile text-grey-6" style="width: 100%">
               <q-separator class="q-my-md" color="grey-7" style="width: 100%" />
               © 2025 Orusa. All rights reserved
             </div>
@@ -285,5 +294,6 @@ function toggleRightDrawer() {
 <style scoped>
 .header-bg {
   background-color: #fbd2b4;
+  min-height: 100px;
 }
 </style>
